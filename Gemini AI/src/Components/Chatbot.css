@@ -1,0 +1,100 @@
+/* Chatbot Container */
+.chat-container {
+  max-width:700px;
+  min-height: auto;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat Header */
+.chat-header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px;
+  /* background: #007bff; */
+  color: black;
+}
+
+/* Chat Messages */
+.chat-messages {
+  padding: 10px;
+  height: 300px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Message Styles */
+.message {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  max-width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.message.user {
+  background: #007bff;
+  color: white;
+  align-self: flex-end;
+}
+
+.message.bot {
+  background: #e5e5e5;
+  color: black;
+  align-self: flex-start;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Copy Button */
+.copy-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+  color: #007bff;
+}
+
+.copy-btn:hover {
+  color: #0056b3;
+}
+
+/* Input Section */
+.chat-input {
+  display: flex;
+  margin-top: 40px;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.chat-input button {
+  padding: 10px 15px;
+  margin-left: 5px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background: #0056b3;
+}
